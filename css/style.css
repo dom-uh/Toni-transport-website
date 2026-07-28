@@ -51,6 +51,9 @@ display: block;
 
 header{
 background: var(--card-bg);
+position: sticky;
+z-index: 1;
+top: 0em;
 }
 
 .section{
@@ -167,8 +170,6 @@ color: var(--white);
 nav li:hover,
 nav li:focus{
 transform: scale(0.9);
-background: var(--card-hover);
-border-radius: 10px;
 }
 
 .hero{
@@ -350,7 +351,7 @@ font-weight:700;
 display: block;
 max-width: 100%;
 height: auto;
-border-radius: 15px;
+border-radius: 40px;
 }
 
 .whyus{
@@ -388,7 +389,9 @@ padding-top: 2em;
 }
 
 .whyus-details{
+  font-family:"Sans-serif";
   font-size: 1rem;
+  color: var(--text-gray);
   margin-bottom: 1em;
 }
 
@@ -420,7 +423,7 @@ margin-bottom: 1em;
 display: block;
 max-width: 100%;
 height: auto;
-border-radius: 15px;
+border-radius: 40px;
 }
 
 .card .cardhd{
@@ -431,6 +434,17 @@ color: var(--white);
 
 .card div p:not(.cardhd,book){
 color: var(--text-gray);
+}
+
+.logo img a{
+  display: inline-block;
+}
+
+.logo img{
+  max-width: 100px;
+  height: auto;
+  posiion: fixed;
+  margin-left: 17em;
 }
 
 .book a{
@@ -514,6 +528,10 @@ height: 194px;
     animation-play-state: paused;
 }
 
+.client:-webkit-scrollbar{
+  display: block;
+}
+
 .Cl{
   color: var(--white);
   font-weight: bold;
@@ -567,7 +585,7 @@ margin-left: 1.4em;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;/*test*/
+  font-size: 0.8rem;
   position: sticky;
   bottom: 0;
   border-bottom: none;
@@ -648,7 +666,7 @@ p:not(.cta p){
   font-size: 1.3rem;  
   text-shadow: none;  
   color: var(--white);  
-  width: 29ch; 
+  width: 40ch; 
 }  
   
 .cta p{  
@@ -733,7 +751,7 @@ font-size: 1.5em;
 .whyus img{
 display: block;
 border-radius: 10px;
-max-width: 60%;
+max-width: 100%;
 height: auto;
 order: -1;
 }
@@ -753,7 +771,7 @@ flex-direction: row;
 .help{
 padding-left: 2em;
 padding-bottom: 1em;
-flex-wrap: wrap;
+flex-wrap:  wrap;
 order: 1;
 flex: 1;
 
@@ -943,9 +961,13 @@ border: 1px solid var(--background);
    font-size: 1.7rem;  
  }  
    
+   .logo{
+  display: none;
+}
+   
  .book{  
    padding: 0.1em;  
-  max-width: 30%;  
+  max-width: 120px;  
    text-align: center;  
  }
 
@@ -955,6 +977,7 @@ border: 1px solid var(--background);
 
 .book{
 padding: 0.3em;
+  max-width: 120px;  
 text-align: center;
 }
 
