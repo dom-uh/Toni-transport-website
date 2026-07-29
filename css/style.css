@@ -58,7 +58,7 @@ top: 0em;
 
 .section{
 display: flex;
-flex-flow: row nowrap;
+flex-flow: row no wrap;
 justify-content: space-between;
 align-items: center;
 height: 70px;
@@ -330,17 +330,17 @@ flex-direction: column;
 margin-bottom: 0.5em;
 }
 
-.maincover p:not(.cover){
+.maincover p:not(h2){
 font-size: 0.7rem;
 color: var(--primary);
 }
 
-.cover{
+h2{
 font-size: 1.5rem;
 font-weight: bold;
 }
 
-.choose,
+h3,
 .whyush2,
 .bold{
 font-family:"Space Grotesk", sans-serif;
@@ -395,8 +395,8 @@ padding-top: 2em;
   margin-bottom: 1em;
 }
 
-.choose{
-font-size: 1.5em;
+h3{
+font-size: 1.2em;
 color: var(--primary);
 }
 
@@ -436,17 +436,16 @@ color: var(--white);
 color: var(--text-gray);
 }
 
- .logo img a{
-   display: block;
- }
-
 .logo img{
+  display: block;
   border: 2px solid var(--primary);
   background: var(--card-bg);
   max-width: 100px;
   height: auto;
-  position: sticky;
-  margin-left: 17em;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1;
 }
 
 .book a{
@@ -504,7 +503,7 @@ margin-left: 1em;
     }
 }
 
-.client div p{
+.client .div p{
   animation:scroll 9s linear infinite;
   place-content: center;
   background: var(--card-bg);
@@ -517,16 +516,12 @@ width: 250px;
 height: 194px;
 }
 
- div:last-child{
-  margin-left: 0em;
+.client .div:last-child{
+  margin-left: none;
 }
 
 .client p:not(.Cl){
   color: var(--text-gray);
-}
-
-.client div:hover{
-    animation-play-state: paused;
 }
 
 .client::-webkit-scrollbar{
@@ -571,6 +566,21 @@ padding: 1em;
 .footer div:first-child{
 text-align: center;
 padding: 1em;
+}
+
+.footer .footer-link a{
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer .footer-link a:hover{
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.footer .footer-link a:any-link{
+  color: var(--white);
 }
 
 .footer div:nth-child(3),
@@ -681,11 +691,11 @@ font-family: "Inter","Space Grotesk";
 font-size: 2em;
 }
 
-.maincover p:not(.cover){
+.maincover p:not(h2){
 font-size: 1.5rem;
 }
 
-.cover{
+h2{
 font-size: 2em;
 }
 
@@ -737,8 +747,8 @@ font-family: "Space Grotesk","Sans-Serif";
 margin-right: 1em;
 margin-left:1em ;
 
-.choose{
-font-size: 2em;
+h3{
+font-size: 2.5em;
 }
 
 .whyush2,.headset{
@@ -908,17 +918,17 @@ background: var(--card-bg);
   }  
 }  
 
-.details p{  
+.detail p{  
   font-size: 2.5rem;  
 }
 
 .maincover{
 margin-bottom: 1em;
-p:not(.cover){
+p:not(h2){
 font-size: 1.8rem;
 }
 
-.cover{  
+h2{  
 font-size: 2rem;  
 }
 
@@ -960,10 +970,6 @@ border: 1px solid var(--background);
  .call{  
    font-size: 1.7rem;  
  }  
-   
-   .logo{
-  display: none;
-}
    
  .book{  
    padding: 0.1em;  
@@ -1087,17 +1093,17 @@ font-family: "Inter", sans-serif;
     
 }  
   
-.details p{  
+.detail p{  
   font-size: 2.5rem;  
 }
 
 .maincover{
 margin-bottom: 1em;
-p:not(.cover){
+p:not(h2){
 font-size: 1.8rem;
 }
 
-.cover{  
+h2{  
 font-size: 2rem;  
 }
 
