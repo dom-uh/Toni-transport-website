@@ -753,7 +753,6 @@ display: block;
 border-radius: 10px;
 max-width: 100%;
 height: auto;
-order: -1;
 }
 
 .whyus-details{
@@ -762,7 +761,6 @@ order: -1;
 
 .grid{
 display: block;
-display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: row;
@@ -771,15 +769,11 @@ flex-direction: row;
 .help{
 padding-left: 2em;
 padding-bottom: 1em;
-flex-wrap:  wrap;
-order: 1;
-flex: 1;
 
 .book{
 text-align: center;
 font-size: 1.3rem;
-padding: 0.1em;
-width: 60%;
+max-width: 60%;
 }
 }
 }
@@ -1121,9 +1115,9 @@ font-size: 2rem;
 
 .whyus{
 display: flex;
+justify-content: column;
 
 p{  
-     
    font-size: 1.7rem;  
  }
 
@@ -1132,23 +1126,23 @@ align-items: center;
 
 img{  
    display: block;  
+      margin-top: 10em;
    margin-bottom: 0em;  
    max-width: 100%;  
    height: auto;  
- box-shadow:0px 0px 10px var(--primary);  
+ box-shadow:0px 0px 10px var(--primary);
  border: 1px solid var(--primary);  
  }  
    
  .help{  
-   display: flex;  
      
-   .headset{  
+   .headset{
      font-size: 4em;  
    }  
-     
+    
     .bold{  
    text-align: left;  
-   margin-bottom: 0.9em;  
+   margin-bottom: 0.4em;  
    font-size: 2rem;  
  }  
    
@@ -1170,6 +1164,7 @@ img{
 .card{
 
 .order{
+  
 display: flex;
 flex-direction: row;
 align-items: center;
