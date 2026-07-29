@@ -58,7 +58,7 @@ top: 0em;
 
 .section{
 display: flex;
-flex-flow: row no-wrap;
+flex-flow: row nowrap;
 justify-content: space-between;
 align-items: center;
 height: 70px;
@@ -436,12 +436,16 @@ color: var(--white);
 color: var(--text-gray);
 }
 
+ .logo img a{
+   display: block;
+ }
+
 .logo img{
   border: 2px solid var(--primary);
   background: var(--card-bg);
   max-width: 100px;
   height: auto;
-  posiion: fixed;
+  position: sticky;
   margin-left: 17em;
 }
 
@@ -501,15 +505,14 @@ margin-left: 1em;
 }
 
 .client div p{
-  animation:scroll 10s linear infinite;
+  animation:scroll 9s linear infinite;
   place-content: center;
   background: var(--card-bg);
 border: 0.5px solid var(--border);
 border-radius: 20px;
-margin-right: 1em;
-margin-left: 1em;
+margin-right: 0.5em;
+margin-left: 0.5em;
 padding:0.5em;
-left: -100px;
 width: 250px;
 height: 194px;
 }
@@ -526,7 +529,7 @@ height: 194px;
     animation-play-state: paused;
 }
 
-.client:-webkit-scrollbar{
+.client::-webkit-scrollbar{
   display: block;
 }
 
