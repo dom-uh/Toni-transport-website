@@ -296,6 +296,21 @@ padding: 1em;
 margin: 0em 0.5em 1em 0.5em;
 width: 250px;
 height: 250px;
+animation: scroll 3s linear 3;
+}
+
+@ keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  
+  50%{
+    transform: translateX(-50%);
+  }
+  
+  100%{
+    transform: translateX(0);
+  }
 }
 
 .service div p{
@@ -477,57 +492,56 @@ display: flex;
 align-items: center;
 flex-direction: column;
 margin-bottom: 0.5em;
+margin-top: 2em;
 }
 
 .client{
-  display: flex;
-  margin: auto;
-overflow:  auto;
-margin-top: 1.5em;
-scroll-behavior: smooth;
-transition: scroll 5s linear ;
-margin-right: 1em;
-margin-left: 1em;
-}
-
-@keyframes scroll{
-    from{
-        transform: translate(0%);
-    }
-    
-    to{
-      transform: translate(-900px);
-    }
-}
-
-.client .div p{
-  animation:scroll 9s linear infinite;
-  place-content: center;
-  background: var(--card-bg);
-border: 0.5px solid var(--border);
-border-radius: 20px;
-margin-right: 0.5em;
-margin-left: 0.5em;
-padding:0.5em;
-width: 250px;
-height: 194px;
-}
-
-.client .div:last-child{
-  margin-left: none;
-}
-
-.client p:not(.Cl){
-  color: var(--text-gray);
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 2rem;
+    margin: 1.5rem 0.5rem;
+    background: var(--card-bg);
+    border: none;
+    border-radius: 10px;
+    scroll-behavior: smooth;
 }
 
 .client::-webkit-scrollbar{
-  display: block;
+    display: none;
+}
+
+.client .div{
+    flex: 0 0 300px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+    background: var(--background);
+    animation: scroll 3s linear infinite;
+}
+
+.client .div p{
+    color: var(--text-gray);
+    line-height: 1.6;
 }
 
 .Cl{
-  color: var(--white);
-  font-weight: bold;
+    color: var(--white);
+    font-weight: bold;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .footer{
@@ -787,8 +801,8 @@ max-width: 60%;
 
 .logo img{
    width: 6%;
-     position: fixed;
-  bottom: 20px;
+  position: fixed;
+  bottom: 50px;
   right: 10px;
   z-index: 1;
 }
@@ -802,14 +816,30 @@ font-size: 1.5rem;
 font-weight: 700;
 }
 
+.order{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 2em;
+}
+
+.flex{
+  margin-top: 5em;
+}
+
 div p:not(.cardhd){
 font-family:"Manrope" ;
 font-size: 1.3rem;
 }
+
+.book{
+text-align: center;
+font-size: 1.3rem;
+width: 60%;
+}
 }
 
 .footer{
-
 font-family: "Manrope","Sans-Serif";
 font-size: 1.2rem;
 gap: 1.5em;
