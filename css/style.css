@@ -67,7 +67,7 @@ height: 70px;
   flex-direction: row;
 }
 
-.section img{
+.section-left img{
     display: block;
   max-width: 100%;
   height: auto;
@@ -446,8 +446,8 @@ border-radius: 40px;
 }
 
 .card .cardhd{
-font-family:"Space Grotesk";
-font-weight: 700;
+font-family:"sans-serif";
+font-weight: bold;
 color: var(--white);
 }
 
