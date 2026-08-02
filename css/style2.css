@@ -169,6 +169,12 @@ h4{
   margin-bottom: 1em;
 }
 
+.fa-bullseye,
+.fa-eye{
+  color: var(--primary);
+  font-size: 3rem;
+}
+
 .value{
   background: var(--card-bg);
   border-radius: 10px;
@@ -184,6 +190,17 @@ h4{
 .value p{
   color: var(--text-gray);
   margin-bottom: 1em;
+}
+
+.fa-handshake,
+.fa-shield-halved,
+.fa-scale-balanced,
+.fa-user-tie,
+.fa-users,
+.fa-award{
+  font-size: 2rem;
+  color: var(--primary);
+  margin-right: 0.2em;
 }
 
 h4,
@@ -241,6 +258,12 @@ footer a{
 
  .contact a:any-link{
   color: var(--black);
+}
+
+.fa-phone{
+  color: var(--black);
+  font-size: 1rem;
+  margin-right: 0.3rem;
 }
 
 .contact:hover{
