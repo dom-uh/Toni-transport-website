@@ -74,10 +74,9 @@ height:75px;
 
 .hero{
  background-image: url('../img/CEO.jpg');
-  background-position: center;
   background-repeat: no-repeat;
   height: 70vh;
-  background-size:cover;
+  background-size:100%;
 }
 
 .hero p{
@@ -91,6 +90,7 @@ height:75px;
   display: block;
   color: var(--black);
   text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
 }
 
 .hero a:any-link{
@@ -121,8 +121,7 @@ height:75px;
 h5{
   display: flex;
   justify-content: flex-end;
-  margin-right: 0.5em;
-  margin-top: 4em;
+  margin: 9em 0.5em 10em 0em;
   color: var(--background);
 }
 
@@ -130,15 +129,15 @@ h5{
   background: var(--card-bg);
   border-radius: 10px;
   padding: 0.5em;
-  margin: 1em 0em 1em 0em;
+  margin: 0em 0em 1em 0em;
   line-height: 1.5;
 }
 
 h1{
   font-size: 1.5rem;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin: 2em 0.5em 1em 0.5em;
   border: 1px solid var(--border);
+  border-radius: 10px;
   background: var(--card-bg);
   padding: 1em;
   text-align: center;
@@ -165,8 +164,12 @@ h4{
   color: var(--primary);
   font-size: 1.5em;
   font-weight: bold;
-  margin-top: 1em;
+  margin-top:0.5em;
   margin-bottom: 1em;
+}
+
+.fa-bullseye{
+  margin-top: 0.5em;
 }
 
 .fa-bullseye,
@@ -180,6 +183,15 @@ h4{
   border-radius: 10px;
   padding: 0.5em;
   margin: 1em 0.5em 0.5em 0.5em;
+}
+
+.value h4{
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding: 1em;
 }
 
 .value .value-hd{
@@ -272,3 +284,84 @@ footer a{
   transition-duration: 0.3s;
   transform: scale(0.9);
 }
+
+/* Tablets */
+@media (min-width: 768px){
+  
+  .hero p{
+    font-size: 1.5rem;
+  }
+  
+.section{
+  justify-content: flex-between;
+}
+
+  .section .toni{
+    font-size: 1rem;
+  }
+  
+  .section .small-hd{
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  h5{
+    display: flex;
+    align-content: flex-end;
+    margin: 9em 0.4em 0em 10em;
+    font-size:2rem;
+    z-index: -1;
+  }
+  
+  .abt{
+    font-size: 2rem;
+  }
+  
+  h1{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0.5em 1em 0.5em 1em;
+    border-radius: 15px;
+    padding: 0em;
+  }
+  
+  h4{
+    font-size: 2.5rem;
+  }
+  
+  .mission-vs,
+  .value{
+    font-size: 1.5rem;
+  }
+  
+  .fa-handshake,
+.fa-shield-halved,
+.fa-scale-balanced,
+.fa-user-tie,
+.fa-users,
+.fa-award{
+  font-size: 3rem;
+}
+
+footer{
+  font-size: 1.5rem;
+}
+
+.fa-phone{
+  display: none;
+}
+
+.contact{
+  border-radius: 5px;
+  width: 25%;
+  text-align: center;
+}
+}
+
+/* Laptops */
+@media (min-width: 1024px){
+  
+}
+
+/* Large desktops */
+@media (min-width: 1280px)
