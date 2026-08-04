@@ -303,6 +303,10 @@ height: 250px;
 animation: linear 3s linear 2;
 }
 
+.fa-circle-arrow-right{
+  margin-top: 0.5em;
+}
+
 @keyframes linear{
   0%{
     transform: translateX(0);
