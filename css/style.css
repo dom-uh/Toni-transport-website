@@ -1000,6 +1000,32 @@ width: 60%;
 }
 }
 
+.abt p,
+.mission-vs p,
+.value p{
+  font-size: 1.5rem;
+  font-family: "Manrope",sans-serif;
+}
+
+.foot{
+  font-family: "Manrope",sans-serif;
+  color: var(--text-gray);
+  text-align: center;
+    font-size: 1.5rem;
+    
+.contact{
+  text-align: center;
+  padding: 0em;
+  width: 20%;
+}
+
+ .fa-phone{
+   display: none;
+}
+
+}
+
+
 .footer{
 font-family: "Manrope",sans-serif;
 font-size: 1.2rem;
@@ -1213,6 +1239,64 @@ font-size: 2rem;
   }  
     
 }  
+ 
+ .abt{
+   margin: 0.5em 7em 0em 7em;
+   border-radius: 10px;
+ }
+  
+.abt p{
+  font-size: 1.5rem;
+}
+
+.mission-vs p{
+  font-size: 1.5rem;
+}
+
+.value p{
+  font-size: 1.5rem;
+}
+
+.foot{
+  color: var(--text-gray);
+  text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact{
+  text-align: center;
+  width: 30%;
+}
+
+ .fa-phone{
+  font-size: 2rem;
+  margin-right: 0.5;
+ color: var(--background);
+}m;
+}
+
+.mission-vs p{
+  font-size: 1.8rem;
+}
+
+.value p{
+  font-size: 1.8rem;
+}
+
+.foot{
+  color: var(--text-gray);
+  text-align: center;
+    font-size: 1.8rem;
+}
+
+.contact{
+  text-align: center;
+  width: 20%;
+}
+
+ .fa-phone{
+  display: none;
+}
   
 .footer{  
 font-family: "Manrope",sans-serif;  
